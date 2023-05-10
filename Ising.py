@@ -73,17 +73,3 @@ for i in range(t):
     s=si
 
 fich.close()
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
