@@ -57,7 +57,7 @@ dv[0]=[0,0]
 
 tmax=(5.20344e9*(G*Ms/(c**3))**0.5)/100     #Tiempo total del programa en función de la órbita de Neptuno
 
-n=1000                                      #Número de divisiones del tiempo
+n=100000                                      #Número de divisiones del tiempo
 h=tmax/n                                    #Pasos de tiempo h
 
 #Variables a usar definidas con su valor inicial (excepto para el tiempo)
