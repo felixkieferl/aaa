@@ -61,15 +61,31 @@ fich=open('ising_data.dat','w')
 t=1000000
 
 for i in range(t):
-    for j in range(N):
-        for k in range(N):
-            if k==N-1:
-                print(str(s[j,k]),file=fich)
-            else:
-                print(str(s[j,k])+", ",end="",file=fich)
-    print("",file=fich)
-            
+    
+    if i/1000==int(i/1000):
+        for j in range(N):
+            for k in range(N):
+                if k==N-1:
+                    print(str(s[j,k]),file=fich)
+                else:
+                    print(str(s[j,k])+", ",end="",file=fich)
+        print("",file=fich)
+                
     si=f(s,T,N)
     s=si
 
 fich.close()
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
