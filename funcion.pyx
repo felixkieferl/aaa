@@ -1,5 +1,5 @@
 import cython
-from cython import range
+import numpy as np
 from libc.stdlib cimport rand, RAND_MAX
 from numpy cimport ndarray, int64_t
 
@@ -13,6 +13,9 @@ def f(ndarray[int64_t, ndim=2] s, double T, int N, object p, object DeltaE):
     for i in range(N**2):
         n = rand() % N
         m = rand() % N
+        
+        n = n.astype(np.int64)
+        m = m.astype(np.int64)        
         
         DE = DeltaE(s, n, m, N)
         pr = p(DE, T)
