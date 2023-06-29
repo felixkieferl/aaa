@@ -52,7 +52,7 @@ x=0
 
 for i in range(t):
         
-    if i%100==0:
+    if i%1==0:
         x+=1
         m=0
         Es=0
