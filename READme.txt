@@ -1,0 +1,4 @@
+Los archivos "*.txt" son los que contienen los patrones de los números del 0 al 9 utilizados en el código.
+El código principal es "Hopfield.py". "Hopfield_ap4.py" es el código utilizado para el apartado 4. Los archivos "datos_hopfield.py" y "datos_hopfield_ap4.py" son los que extraen la información para generar gráficas.
+"Hopfield_cython.py" es una versión anticuada de "Hopfield.py" para probar la optimización Cython. "main.pyx" contiene la función optimizada en Cyhton, "setup.py" es el archivo para activar esta función en el ordenador que se utilice y los archivos "main.*"  y la carpeta build son los que se obtienen al activar este setup.
+Los archivos de "cuenta_atrás.*" son los que contienen el código, el archivo para ser interpretado por el programa de la animación y el vídeo de la animación.
